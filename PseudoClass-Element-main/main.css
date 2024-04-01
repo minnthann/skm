@@ -1,0 +1,143 @@
+/* Root Selector or HTML Selector */
+:root {
+    --unique-color: maroon;
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+    --trans-color: transparent;
+    --bgcolor: rgba(197, 214, 182, 0.584);
+
+    background: var(--bgcolor);
+  }
+
+  
+
+/* Universal Selector or Body Selector */
+* {
+    box-sizing: border-box;
+    margin: 3%;
+    padding: 0;
+    font-size: 20px;
+  }
+
+
+
+/* Horizontal Bar */
+  hr {
+    height: 3px;
+    background: var(--secondary-color);
+    margin: 10%;
+    color: var(--primary-color);
+  }
+
+
+
+/* Caption Starts */
+  h1 {
+    font-size: 2.5em;
+    color: var(--secondary-color);
+  }
+  h2 {
+    font-size: 1.5em;
+    color: var(--tertiary-color);
+  }
+
+article p:first-child::first-letter {
+    font-weight: bold;
+    font-size: 4.3em;
+    color: var(--tertiary-color);
+    background: var(--secondary-color);
+    float: left;
+    padding: 0 9px 0 0;
+    margin-top: -15px;
+    text-shadow: 2px 3px 2px var(--secondary-color);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+
+article p:first-child::first-line {
+    font-weight: bold;
+    color: var(--tertiary-color);
+    text-transform: uppercase;
+}
+/* Caption Ends */
+
+
+
+/* ReadMore Starts */
+/* Hide the second piece of text by default */
+p.readmore .second {
+    display:none;
+}
+
+/* Hide the first piece of text on hover */
+p.readmore:hover .first {
+    display:none;
+}
+
+/* Re-show the second piece of text on hover */
+p.readmore:hover .second {
+   display:inline;
+}
+/* ReadMore Ends */
+
+
+
+/* Table Starts */
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--tertiary-color);
+}
+
+thead,
+tfoot {
+  background-color: rgb(228 240 245);
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+
+thead tr th {
+  color: var(--unique-color);
+  font-size: 1.5em;
+}
+
+tbody tr th, td{
+  text-align: left;
+  line-height: 1.5;
+}
+
+tbody > tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+tbody tr th, tfoot tr th {
+  color: var(--tertiary-color);
+}
+
+tfoot tr th span {
+  color: var(--unique-color);
+}
+/* Table Ends */

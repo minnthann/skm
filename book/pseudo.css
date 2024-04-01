@@ -1,0 +1,9 @@
+article p .second {
+    display: none;
+}
+article p:hover .first{
+    display: none;
+}
+article p:hover .second{
+    display: inline;
+}
