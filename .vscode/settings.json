@@ -1,3 +1,23 @@
-{
-    "liveServer.settings.port": 5501
-}
+// Player and Enemy Initialization
+//     e.g. var x = 10;
+// Function Declaration
+//     var shout = function () {
+//          // Logic
+//     };
+// Call for shout()
+//     shout();
+
+window.alert("မင်္ဂလာပါ, ကျွန်မတို့ရဲ့ ဖူဂျီစားသောက်ဆိုင်မျှ ကြိုဆိုပါတယ်");
+var customerName= window.promtp("what is your maome, please");
+var customerMoney = 10;
+
+var bun =3;
+var noodle =4;
+var sumpling=5;
+
+var eat = function(){
+    window.alert ("မီနူးလေးတချက်ပေးပါ")
+    var x =window.prompt("bun, noodle, sumpling");
+    if(x==)
+};
+eat();
